@@ -1,1 +1,39 @@
-/* здесь подключите шрифты */
+@font-face {
+  font-family: "Montserrat-Regular";
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url("../../fonts/Montserrat/Montserrat-Regular.woff2") format("woff2"),
+}
+
+@font-face {
+  font-family: "Montserrat-Medium";
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+  src: url("../../fonts/Montserrat/Montserrat-Medium.woff2") format("woff2"),
+}
+
+@font-face {
+  font-family: "Montserrat-SemiBold";
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+  src: url("../../fonts/Montserrat/Montserrat-SemiBold.woff2") format("woff2"),
+}
+
+@font-face {
+  font-family: "Montserrat-Bold";
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  src: url("../../fonts/Montserrat/Montserrat-Bold.woff2") format("woff2"),
+}
+
+@font-face {
+  font-family: "Montserrat-ExtraBold";
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+  src: url("../../fonts/Montserrat/Montserrat-ExtraBold.woff2") format("woff2"),
+}
