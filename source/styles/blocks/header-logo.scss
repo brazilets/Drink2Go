@@ -1,0 +1,22 @@
+.header-logo {
+  padding: 12px 20px;
+
+  @media #{$desktop} {
+    display: flex;
+    padding: 0;
+    margin: 0;
+  }
+}
+
+.header-logo span {
+  display: none;
+
+  @media #{$desktop} {
+    display: block;
+    padding-left: 20px;
+    font-size: 12px;
+    max-width: 140px;
+    line-height: 133%;
+    color: $base-black
+  }
+}

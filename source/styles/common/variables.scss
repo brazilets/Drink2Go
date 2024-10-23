@@ -20,10 +20,15 @@ $bg-flat-white: #f3ebe1;
 $bg-lavender-latte: #eae6fc;
 $bg-espresso: #e5e6e8;
 
-// FONTS
+// Fonts
 
 $font-base: "Montserrat-Regular", sans-serif;
 $font-500: "Montserrat-Medium", sans-serif;
 $font-600: "Montserrat-SemiBold", sans-serif;
 $font-700: "Montserrat-Bold", sans-serif;
 $font-800: "Montserrat-ExtraBold", sans-serif;
+
+// Viewport
+
+$tablet: "(min-width: 768px)";
+$desktop: "(min-width: 1440px)";

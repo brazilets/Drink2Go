@@ -1,0 +1,46 @@
+.js-toggle-button {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  margin: 0;
+  padding: 22px;
+  background-color: transparent;
+  border: none;
+
+  @media #{$tablet} {
+    display: none;
+  }
+}
+
+.js-toggle-button:active {
+  background-color: $base-secondary;
+}
+
+.js-toggle-button span {
+  position: absolute;
+  width: 16px;
+  height: 2px;
+  background-color: $base-black;
+  left: 22px;
+  transition: transform 0.2s ease-in;
+}
+
+.js-toggle-button span:first-child {
+  transform: translateY(-5px);
+}
+
+.js-toggle-button span:last-child {
+  transform: translateY(5px);
+}
+
+.js-toggle-button.active span:first-child {
+  transform: translateY(0) rotate(45deg);
+}
+
+.js-toggle-button.active span:last-child {
+  transform: translateY(0) rotate(-45deg);
+}
+
+.js-toggle-button.active span:nth-child(2) {
+  opacity: 0;
+}

@@ -1,0 +1,33 @@
+.header-profile__btn {
+  margin: 0;
+  padding: 22px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+
+  @media #{$tablet} {
+    display: flex;
+    padding: 32px 22px;
+    align-items: center;
+    column-gap: 8px;
+  }
+}
+
+.header-profile__btn:active {
+  background-color: $base-secondary;
+}
+
+.header-profile__btn span {
+  display: none;
+
+  @media #{$desktop} {
+    display: block;
+    font-family: $font-500;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 133%;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: $base-black;
+  }
+}
