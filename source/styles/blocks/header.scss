@@ -1,5 +1,31 @@
 .header {
-  // background-color: #663399;
-  // color: #ffffff;
-  // padding: 10px 15px;
+  position: relative;
+  z-index: 10;
+}
+
+.header__inner {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 60px;
+  background-color: $base-white;
+  margin: 0 -20px;
+
+  @media #{$tablet} {
+    justify-content: space-between;
+    height: 80px;
+    margin-right: 0;
+  }
+}
+
+.header__logo {
+  margin-right: auto;
+
+  @media #{$tablet} {
+    margin: 0;
+  }
+}
+
+.header__profile {
+  display: flex;
 }

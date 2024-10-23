@@ -18,14 +18,20 @@
   <header class="header" data-test="header">
     <div class="container">
       <div class="header__inner">
-        <div class="header__logo header-logo">
-          <img class="header-logo__img" src="./images/logo-symbol.svg" width="32" height="36" alt="Логотип Drink2Go">
-        </div>
-        <h1 class="visually-hidden">Интернет-магазин кофейных напитков</h1>
+        <a class="header__logo header-logo">
+          <picture>
+            <source media="(min-width: 1440px)" srcset="images/logo-full.svg" type="image/svg+xml" width="170"
+              height="36">
+            <source media="(min-width: 768px)" srcset="images/logo-short.svg" type="image/svg+xml" width="82"
+              height="36">
+            <img class="header-logo__img" src="./images/logo-symbol.svg" width="32" height="36" alt="Логотип Drink2Go">
+          </picture>
+          <span>Интернет-магазин кофейных напитков</span>
+        </a>
         <div class="header__menu menu-nav">
           <ul class="menu-nav__list">
             <li class="menu-nav__item">
-              <a class="menu-nav__link" href="#!">Главная</a>
+              <a class="menu-nav__link menu-nav__link--current" href="#!">Главная</a>
             </li>
             <li class="menu-nav__item">
               <a class="menu-nav__link" href="#!">Каталог</a>
@@ -39,14 +45,16 @@
           </ul>
         </div>
         <div class="header__profile header-profile">
-          <a class="header-profile__user" href="#!">
-            <img class="header-profile__user" src="images/user.svg" width="16" height="16" alt="Войти">
-          </a>
-          <a class="header-profile__user" href="#!">
-            <img class="header-profile__basket" src="images/basket.svg" width="16" height="16" alt="Корзина">
-          </a>
+          <button class="header-profile__btn header-profile__btn-user" type="button">
+            <img class="header-profile__img" src="images/user.svg" width="16" height="16" alt="Войти">
+            <span>Войти</span>
+          </button>
+          <button class="header-profile__btn header-profile__btn-basket" type="button">
+            <img class="header-profile__img" src="images/basket.svg" width="16" height="16" alt="Корзина">
+            <span>Корзина</span>
+          </button>
         </div>
-        <button class="header__menu-btn js-toggle-button" id="burger" aria-label="Открыть меню" type="button">
+        <button class="js-toggle-button" id="burger" aria-label="Открыть меню" type="button">
           <span></span>
           <span></span>
           <span></span>
