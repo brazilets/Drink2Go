@@ -18,7 +18,7 @@
   <header class="header" data-test="header">
     <div class="container">
       <div class="header__inner">
-        <a class="header__logo header-logo">
+        <a class="header__logo header-logo" href="#!">
           <picture>
             <source media="(min-width: 1440px)" srcset="images/logo-full.svg" type="image/svg+xml" width="170"
               height="36">
@@ -45,11 +45,11 @@
           </ul>
         </div>
         <div class="header__profile header-profile">
-          <button class="header-profile__btn header-profile__btn-user" type="button">
+          <button class="header-profile__btn" type="button">
             <img class="header-profile__img" src="images/user.svg" width="16" height="16" alt="Войти">
             <span>Войти</span>
           </button>
-          <button class="header-profile__btn header-profile__btn-basket" type="button">
+          <button class="header-profile__btn" type="button">
             <img class="header-profile__img" src="images/basket.svg" width="16" height="16" alt="Корзина">
             <span>Корзина</span>
           </button>
@@ -64,53 +64,117 @@
   </header>
   <main class="main">
     <section class="hero" data-test="hero">
-      <div class="container">
-        <h2 class="visually-hidden"></h2>
-        <div class="hero__slider hero-slider">
-          <ul class="hero-slider__list">
-            <li class="hero-slider__item hero-slide">
-              <img class="hero-slide__img" src="./images/slide-1-mobile@1x.png" width="280" height="280"
-                alt="банка Декаф Флэт Уайт">
-              <span class="hero__badge">Новинка!</span>
-              <h2 class="hero-slide__title">Декаф Флэт Уайт</h2>
-              <p class="hero-slide__text">Свежесваренный кофе без кофеина из Эфиопии с натуральным фермерским молоком —
-                то, что нужно для расслабления после тяжёлого рабочего дня</p>
-              <div class="hero-slide__buy">
-                <span class="hero-slide__buy-old">295₽</span>
-                <div class="hero-slide__buy-item">225₽</div>
-                <button class="hero-slide__btn" type="button">Заказать</button>
+      <h1 class="visually-hidden">Интернет-магазин кофейных напитков</h1>
+      <div class="hero__slider slider">
+        <div class="slider-wrapper">
+          <div class="slider-item slider-item--current">
+            <div class="slider-present">
+              <picture>
+                <source media="(min-width: 1440px)"
+                  srcset="images/slide-1-desktop@1x.webp 1x, images/slide-1-desktop@2x.webp 2x" type="image/webp"
+                  width="600" height="600">
+                <source media="(min-width: 768px)"
+                  srcset="images/slide-1-tablet@1x.webp 1x, images/slide-1-tablet@2x.webp 2x" type="image/webp"
+                  width="476" height="476">
+                <source srcset="images/slide-1@1x.webp 1x, images/slide-1@2x.webp 2x" type="image/webp" width="280"
+                  height="280">
+                <source media="(min-width: 1440px)" srcset="slide-1-desktop@1x.png 1x, slide-1-desktop@2x.png 2x"
+                  type="image/png" width="600" height="600">
+                <source media="(min-width: 768px)"
+                  srcset="images/slide-1-tablet@1x.png 1x, images/slide-1-tablet@2x.png 2x" type="image/png" width="476"
+                  height="476">
+                <img class="slider-img" src="./images/slide-1@1x.png" width="280" height="280"
+                  srcset="images/slide-1@2x.png 2x" alt="банка Декаф Флэт Уайт">
+              </picture>
+            </div>
+            <div class="slider-content">
+              <span class="slider-badge badge">Новинка!</span>
+              <h2 class="slider-title">Декаф Флэт Уайт</h2>
+              <p class="slider-text">Свежесваренный кофе без кофеина из&nbsp;Эфиопии с&nbsp;натуральным
+                фермерским молоком — то, что нужно для&nbsp;расслабления после тяжёлого рабочего дня</p>
+              <div class="slider-buy">
+                <span class="slider-buy-old">295₽</span>
+                <div class="slider-buy-price">225₽</div>
+                <button class="slider-btn button" type="button">Заказать</button>
               </div>
-            </li>
-            <li class="hero-slider__item hero-slide">
-              <img class="hero-slide__img" src="./images/slide-2-mobile@1x.png" width="280" height="280"
-                alt="банка Декаф Флэт Уайт">
-              <span class="hero__badge">Новинка!</span>
-              <h2 class="hero-slide__title">Лавандовый Латте</h2>
-              <p class="hero-slide__text">Невероятное сочетание перуанской высокогорной арабики с молоком ламы и
+            </div>
+          </div>
+          <div class="slider-item">
+            <div class="slider-present">
+              <picture>
+                <source media="(min-width: 1440px)"
+                  srcset="images/slide-2-desktop@1x.webp 1x, images/slide-2-desktop@2x.webp 2x" type="image/webp"
+                  width="600" height="600">
+                <source media="(min-width: 768px)"
+                  srcset="images/slide-2-tablet@1x.webp 1x, images/slide-2-tablet@2x.webp 2x" type="image/webp"
+                  width="476" height="476">
+                <source srcset="images/slide-2@1x.webp 1x, images/slide-2@2x.webp 2x" type="image/webp" width="280"
+                  height="280">
+                <source media="(min-width: 1440px)" srcset="slide-2-desktop@1x.png 1x, slide-2-desktop@2x.png 2x"
+                  type="image/png" width="600" height="600">
+                <source media="(min-width: 768px)"
+                  srcset="images/slide-2-tablet@1x.png 1x, images/slide-2-tablet@2x.png 2x" type="image/png" width="476"
+                  height="476">
+                <img class="slider-img" src="./images/slide-2@1x.png" width="280" height="280"
+                  srcset="images/slide-2@2x.png 2x" alt="банка Лавандовый Латте">
+              </picture>
+            </div>
+            <div class="slider-content">
+              <span class="slider-badge badge">Новинка!</span>
+              <h2 class="slider-title">Лавандовый Латте</h2>
+              <p class="slider-text">Невероятное сочетание перуанской высокогорной арабики с молоком ламы и
                 лавандовым сиропом унесёт вас прямо на вершину Радужных гор</p>
-              <div class="hero-slide__buy">
-                <span class="hero-slide__buy-old">285₽</span>
-                <div class="hero-slide__buy-item">265₽</div>
-                <button class="hero-slide__btn" type="button">Заказать</button>
+              <div class="slider-buy">
+                <span class="slider-buy-old">285₽</span>
+                <div class="slider-buy-price">265₽</div>
+                <button class="slider-btn button" type="button">Заказать</button>
               </div>
-            </li>
-            <li class="hero-slider__item hero-slide">
-              <img class="hero-slide__img" src="./images/slide-3-mobile@1x.png" width="280" height="280"
-                alt="банка Декаф Флэт Уайт">
-              <span class="hero__badge">Новинка!</span>
-              <h2 class="hero-slide__title">Тройной Эспрессо</h2>
-              <p class="hero-slide__text">Мощнее укола адреналина, чернее самой тёмной ночи, этот тройной эспрессо из
+            </div>
+          </div>
+          <div class="slider-item">
+            <div class="slider-present">
+              <picture>
+                <source media="(min-width: 1440px)"
+                  srcset="images/slide-3-desktop@1x.webp 1x, images/slide-3-desktop@2x.webp 2x" type="image/webp"
+                  width="600" height="600">
+                <source media="(min-width: 768px)"
+                  srcset="images/slide-3-tablet@1x.webp 1x, images/slide-3-tablet@2x.webp 2x" type="image/webp"
+                  width="476" height="476">
+                <source srcset="images/slide-3@1x.webp 1x, images/slide-3@2x.webp 2x" type="image/webp" width="280"
+                  height="280">
+                <source media="(min-width: 1440px)" srcset="slide-3-desktop@1x.png 1x, slide-3-desktop@2x.png 2x"
+                  type="image/png" width="600" height="600">
+                <source media="(min-width: 768px)"
+                  srcset="images/slide-3-tablet@1x.png 1x, images/slide-3-tablet@2x.png 2x" type="image/png" width="476"
+                  height="476">
+                <img class="slider-img" src="./images/slide-3@1x.png" width="280" height="280"
+                  srcset="images/slide-3@2x.png 2x" alt="банка Тройной Эспрессо">
+              </picture>
+            </div>
+            <div class="slider-content">
+              <span class="slider-badge badge">Новинка!</span>
+              <h2 class="slider-title">Тройной Эспрессо</h2>
+              <p class="slider-text">Мощнее укола адреналина, чернее самой тёмной ночи, этот тройной эспрессо
+                из
                 Колумбии покажет вам, что такое настоящая бодрость</p>
-              <div class="hero-slide__buy">
-                <span class="hero-slide__buy-old">395₽</span>
-                <div class="hero-slide__buy-item">375₽</div>
-                <button class="hero-slide__btn" type="button">Заказать</button>
+              <div class="slider-buy">
+                <span class="slider-buy-old">395₽</span>
+                <div class="slider-buy-price">375₽</div>
+                <button class="slider-btn button" type="button">Заказать</button>
               </div>
-            </li>
-          </ul>
-          <div class="hero-slider__button-prev slider-button-prev"></div>
-          <div class="hero-slider__button-next slider-button-next"></div>
-          <div class="hero-slider__pagination slider-pagination"></div>
+            </div>
+          </div>
+        </div>
+        <button class="slider-button-prev" type="button">
+          <img src="images/arrow-left.svg" width="20" height="20" alt="Показать предыдущий товар">
+        </button>
+        <button class="slider-button-next" type="button">
+          <img src="images/arrow-right.svg" width="20" height="20" alt="Показать следующий товар">
+        </button>
+        <div class="slider-pagination-wrapper">
+          <button class="slider-pagination slider-pagination--current" type="button"></button>
+          <button class="slider-pagination" type="button"></button>
+          <button class="slider-pagination" type="button"></button>
         </div>
       </div>
     </section>
@@ -282,10 +346,10 @@
               </div>
             </li>
           </ul>
-          <div class="catalog-cards__pagination cards-pagination" aria-label="назад">
+          <div class="catalog-cards__pagination cards-pagination">
             <ul class="cards-pagination__list">
               <li class="cards-pagination__item">
-                <img class="cards-pagination__img" href="#!">
+                <img class="cards-pagination__img" src="#" width="5" height="5" alt="назад">
               </li>
               <li class="cards-pagination__item">
                 <a class="cards-pagination__link" href="#!">1</a>
@@ -297,7 +361,7 @@
                 <a class="cards-pagination__link" href="#!">3</a>
               </li>
               <li class="cards-pagination__item">
-                <img class="cards-pagination__img" href="#!" aria-label="вперёд">
+                <img class="cards-pagination__img" src="#" width="5" height="5" alt="вперёд">
               </li>
             </ul>
           </div>
