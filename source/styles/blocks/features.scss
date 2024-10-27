@@ -1,0 +1,134 @@
+.features__inner {
+  padding: 60px 0 50px;
+}
+
+.features__badge {
+  display: block;
+  text-align: center;
+  margin-bottom: 4px;
+}
+
+.features__title {
+  text-align: center;
+  margin: 0;
+  margin-bottom: 36px;
+
+  @media #{$tablet} {
+    margin-bottom: 60px;
+  }
+
+  @media #{$desktop} {
+    margin-bottom: 180px;
+  }
+}
+
+.features__list {
+  padding: 0 10px;
+  margin: 0;
+  list-style: none;
+  text-align: center;
+
+  @media #{$tablet} {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px 30px;
+    flex-wrap: wrap;
+    margin-bottom: 32px;
+  }
+
+  @media #{$desktop} {
+    flex-wrap: nowrap;
+  }
+}
+
+.features-list__item {
+  margin-bottom: 32px;
+  padding-top: 66px;
+  position: relative;
+
+  @media #{$tablet} {
+    width: 314px;
+    margin-bottom: 0;
+    padding-top: 0;
+  }
+}
+
+.features-list__item::before {
+  content: "";
+  position: absolute;
+  width: 52px;
+  height: 56px;
+  top: 0;
+  left: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+  transform: translateX(-50%);
+
+  @media #{$tablet} {
+    top: 30%;
+    left: 0;
+    transform: translateX(0);
+    transform: translateY(-50%);
+  }
+
+  @media #{$desktop} {
+    top: -77px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+.features-list__item:nth-child(1):before {
+  background-image: url("../../images/speed.svg");
+}
+
+.features-list__item:nth-child(2):before {
+  background-image: url("../../images/ease.svg");
+}
+
+.features-list__item:nth-child(3):before {
+  background-image: url("../../images/energy.svg");
+}
+
+.features-list__item:nth-child(4):before {
+  background-image: url("../../images/ecology.svg");
+}
+
+.features-list__title {
+  font-family: $font-700;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 178%;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 4px;
+
+  @media #{$tablet} {
+    padding-left: 72px;
+    font-size: 24px;
+    line-height: 150%;
+    text-align: start;
+  }
+
+  @media #{$desktop} {
+    padding-left: 0;
+    text-align: center;
+  }
+}
+
+.features-list__text {
+  margin: 0;
+
+  @media #{$tablet} {
+    padding-left: 72px;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: start;
+  }
+
+  @media #{$desktop} {
+    padding-left: 0;
+    text-align: center;
+  }
+}
